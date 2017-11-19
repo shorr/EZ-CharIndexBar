@@ -2,9 +2,9 @@
 
 EZ-CharIndexBar是一个Android上的“字符索引栏”，效果类似WeChat通讯录右侧的索引栏样式。效果如下：
 
-```
+
 <img src="screenshot/demo.gif />
-```
+
 
 ## Gradle 依赖
 在app的`build.gradle` 下添加如下依赖即可：

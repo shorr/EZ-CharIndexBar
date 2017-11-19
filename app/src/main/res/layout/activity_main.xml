@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--联系人列表-->
+    <ListView
+        android:id="@+id/contact_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+    <!--字符索引栏-->
+    <cn.shorr.slidebar.CharIndexBar
+        android:id="@+id/char_slider_bar"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        app:barBackground="#3f000000"
+        app:barChars="☆ABCDEFGHIJKLMNOPQRSTUVWXYZ#"
+        app:barTextColor="@android:color/black"
+        app:barTextSize="14sp" />
+
+</RelativeLayout>

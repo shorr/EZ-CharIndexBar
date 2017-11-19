@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+}
+
+//publish {
+//    userOrg = 'shorr'
+//    groupId = 'cn.shorr'
+//    artifactId = 'ez-charindexbar'
+//    publishVersion = '0.1.0'
+//    desc = '字符索引栏'
+//    website = 'http://shorr.cn'
+//}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/charindexbar/charindexbar.iml" filepath="$PROJECT_DIR$/charindexbar/charindexbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ez-charindexbar.iml" filepath="$PROJECT_DIR$/ez-charindexbar.iml" />
+    </modules>
+  </component>
+</project>

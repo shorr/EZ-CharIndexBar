@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--字符索引栏的自定义属性-->
+    <declare-styleable name="CharIndexBar">
+        <!--字体大小-->
+        <attr name="barTextSize" format="dimension" />
+        <!--字体颜色-->
+        <attr name="barTextColor" format="color" />
+        <!--要显示的字符-->
+        <attr name="barChars" format="string" />
+        <!--背景色-->
+        <attr name="barBackground" format="color" />
+    </declare-styleable>
+
+</resources>

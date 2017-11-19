@@ -3,11 +3,11 @@
 EZ-CharIndexBar是一个Android上的“字符索引栏”，效果类似WeChat通讯录右侧的索引栏样式。效果如下：
 
 ```
-<img src="/screenshot/demo.gif?raw=true" width=360 height=640 alt="Quick Demo">
+<img src="/screenshot/demo.gif>
 ```
 
 ## Gradle 依赖
-在app的***build.gradle*** 下添加如下依赖即可：
+在app的`build.gradle` 下添加如下依赖即可：
 
 ```groovy
 dependencies {
@@ -17,7 +17,7 @@ dependencies {
 
 ## 使用
 
-####在布局xml文件中添加：
+#### 在布局xml文件中添加：
 
 ```xml
 <cn.shorr.slidebar.CharIndexBar
@@ -36,7 +36,7 @@ dependencies {
 - barTextColor：索引栏字体颜色
 - barTextSize：索引栏字体大小
 
-####在Activity中如下操作：
+#### 在Activity中如下操作：
 
 ```java
 //1.创建字符指示视图

@@ -1,6 +1,5 @@
 package cn.shorr.ez_charindexbar;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -8,9 +7,8 @@ import android.widget.ListView;
 
 import java.util.List;
 
-import cn.shorr.slidebar.CharIndicateConfig;
-import cn.shorr.slidebar.CharIndicateView;
 import cn.shorr.slidebar.CharIndexBar;
+import cn.shorr.slidebar.CharIndicateView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,23 +46,29 @@ public class MainActivity extends AppCompatActivity {
      */
     private void initView() {
         contactListView = (ListView) findViewById(R.id.contact_listview);
-        charIndexBar = (CharIndexBar) findViewById(R.id.char_slider_bar);
+        charIndexBar = (CharIndexBar) findViewById(R.id.char_index_bar);
 
         //联系人设置适配器
         contactListView.setAdapter(contactListAdapter);
 
+        //1.创建字符指示视图
+        //使用默认参数字符指示视图
+        charIndicateView = new CharIndicateView(this);
+        /*使用自定义参数字符指示视图
         CharIndicateConfig config = CharIndicateConfig
-                .create()
-                .setViewSize(100)
-                .setTextSize(50)
-                .setTextBold(false)
-                .setTextColor(Color.WHITE)
-                .setBackgroundColor(Color.parseColor("#5f000000"))
-                .setBackgroundRadius(8);
+                        .create()
+                        .setViewSize(100) //视图大小(dp)
+                        .setTextSize(50) //字体大小(sp)
+                        .setTextBold(false) //字体是否加粗
+                        .setTextColor(Color.WHITE) //字体加粗
+                        .setBackgroundColor(Color.parseColor("#5f000000")) //视图背景色
+                        .setBackgroundRadius(8); //视图背景圆角半径(dp)
         charIndicateView = new CharIndicateView(this, config);
-        //索引栏和指示视图建立联系
+        */
+
+        //2.索引栏和指示视图建立联系
         charIndexBar.setupWithIndicateView(charIndicateView);
-        //设置选中监听事件
+        //3.设置选中监听事件
         charIndexBar.setOnSelectedListener(new CharIndexBar.OnSelectedListener() {
             @Override
             public void onSelected(int position, String selectedChar) {

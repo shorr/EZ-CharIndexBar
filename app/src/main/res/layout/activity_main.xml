@@ -15,7 +15,7 @@
 
     <!--字符索引栏-->
     <cn.shorr.slidebar.CharIndexBar
-        android:id="@+id/char_slider_bar"
+        android:id="@+id/char_index_bar"
         android:layout_width="25dp"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"

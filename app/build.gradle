@@ -25,5 +25,5 @@ dependencies {
 
 //    implementation project(':charindexbar')
 
-    compile 'cn.shorr:ez-charindexbar:0.1.0'
+    compile 'cn.shorr:ez-charindexbar:0.1.1'
 }

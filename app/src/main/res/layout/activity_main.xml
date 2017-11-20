@@ -14,7 +14,7 @@
         android:dividerHeight="0dp" />
 
     <!--字符索引栏-->
-    <cn.shorr.slidebar.CharIndexBar
+    <cn.shorr.charindexbar.CharIndexBar
         android:id="@+id/char_index_bar"
         android:layout_width="25dp"
         android:layout_height="match_parent"

@@ -7,8 +7,9 @@ import android.widget.ListView;
 
 import java.util.List;
 
-import cn.shorr.slidebar.CharIndexBar;
-import cn.shorr.slidebar.CharIndicateView;
+import cn.shorr.charindexbar.CharIndexBar;
+import cn.shorr.charindexbar.CharIndicateView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                         .setBackgroundRadius(8); //视图背景圆角半径(dp)
         charIndicateView = new CharIndicateView(this, config);
         */
+        //动态设置索引栏字符
+        //charIndexBar.setChars("0123456789ABCDEFGHIJKLMNO");
 
         //2.索引栏和指示视图建立联系
         charIndexBar.setupWithIndicateView(charIndicateView);

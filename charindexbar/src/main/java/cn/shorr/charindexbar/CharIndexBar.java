@@ -1,4 +1,4 @@
-package cn.shorr.slidebar;
+package cn.shorr.charindexbar;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,6 +8,8 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import cn.shorr.slidebar.R;
 
 
 /**
@@ -101,6 +103,16 @@ public class CharIndexBar extends View {
      */
     public void setOnSelectedListener(OnSelectedListener onSelectedListener) {
         this.onSelectedListener = onSelectedListener;
+    }
+
+    /**
+     * 设置显示的字符
+     *
+     * @param chars
+     */
+    public void setChars(String chars) {
+        this.chars = chars;
+        invalidate();
     }
 
     @Override

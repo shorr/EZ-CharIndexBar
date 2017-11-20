@@ -1,4 +1,4 @@
-package cn.shorr.slidebar;
+package cn.shorr.charindexbar;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

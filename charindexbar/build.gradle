@@ -30,7 +30,7 @@ dependencies {
 //    userOrg = 'shorr'
 //    groupId = 'cn.shorr'
 //    artifactId = 'ez-charindexbar'
-//    publishVersion = '0.1.0'
+//    publishVersion = '0.1.1'
 //    desc = '字符索引栏'
 //    website = 'http://shorr.cn'
 //}

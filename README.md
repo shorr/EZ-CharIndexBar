@@ -2,7 +2,7 @@
 
 EZ-CharIndexBar是一个Android上的“字符索引栏”，效果类似WeChat通讯录右侧的索引栏样式。效果如下：
 
-<img src="/screenshot/demo.gif?raw=true" width=360 height=640 alt="Quick Demo">
+<img src="/screenshot/demo.gif?raw=true" width=360 height=640 alt="screenshot gif">
 
 
 ## Gradle 依赖
@@ -10,7 +10,7 @@ EZ-CharIndexBar是一个Android上的“字符索引栏”，效果类似WeChat�
 
 ```groovy
 dependencies {
-    compile 'cn.shorr:ez-charindexbar:0.1.0'
+    compile 'cn.shorr:ez-charindexbar:0.1.1'
 }
 ```
 
@@ -52,6 +52,8 @@ CharIndicateConfig config = CharIndicateConfig
                 .setBackgroundRadius(8); //视图背景圆角半径(dp)
 charIndicateView = new CharIndicateView(this, config);
 */
+//动态设置索引栏字符
+//charIndexBar.setChars("0123456789ABCDEFGHIJKLMNO");
 
 //2.索引栏和指示视图建立联系
 charIndexBar.setupWithIndicateView(charIndicateView);
@@ -60,7 +62,7 @@ charIndexBar.setOnSelectedListener(new CharIndexBar.OnSelectedListener() {
   @Override
   public void onSelected(int position, String selectedChar) {
     Log.e(TAG, "选中--" + selectedChar);
-    //根据选中的字符来定位ListView的位置
+    //根据选中的字符来定位列表的位置
    ... 
   }
 });

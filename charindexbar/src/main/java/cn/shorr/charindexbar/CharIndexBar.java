@@ -9,8 +9,6 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import cn.shorr.slidebar.R;
-
 
 /**
  * 字符索引栏

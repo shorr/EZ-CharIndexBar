@@ -10,7 +10,7 @@ EZ-CharIndexBar是一个Android上的“字符索引栏”，效果类似WeChat�
 
 ```groovy
 dependencies {
-    compile 'cn.shorr:ez-charindexbar:0.1.1'
+    compile 'cn.shorr:ez-charindexbar:0.1.2'
 }
 ```
 

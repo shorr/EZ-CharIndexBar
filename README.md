@@ -19,7 +19,7 @@ dependencies {
 #### 在布局xml文件中添加：
 
 ```xml
-<cn.shorr.slidebar.CharIndexBar
+<cn.shorr.charindexbar.CharIndexBar
         android:id="@+id/char_index_bar"
         android:layout_width="25dp"
         android:layout_height="match_parent"
